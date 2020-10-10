@@ -1,9 +1,27 @@
+buildscript {
+    repositories {
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        jcenter()
+        mavenCentral()
+    }
+}
+
 apply plugin: 'java'
 
+jar {
+    archiveBaseName = 'unification'
+    archiveVersion =  '0.0.1'
+}
+
 repositories {
-    jcenter()
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
 }
 
 dependencies {
+
     testImplementation 'junit:junit:4.12'
 }
