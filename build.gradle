@@ -11,7 +11,9 @@ plugins {
     id 'maven'
 }
 
-version = '0.0.1'
+group 'com.uf'
+version '0.0.1'
+
 jar {
     manifest {
         attributes('Implementation-Title': 'unification', "Implementation-Version": version)
